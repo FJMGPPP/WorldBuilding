@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Universos" android:id="@+id/universosFragment" />
+    <item android:title="Categoria" android:id="@+id/categoriaFragment"/>
+    <item android:title="Diagramas" />
+    <item android:title="TimeLines" />
+</menu>

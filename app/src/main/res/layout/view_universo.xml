@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constaitLayout"
+    android:layout_width="114dp"
+    android:layout_height="161dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/vector_background_view_universo">
+
+    <TextView
+        android:id="@+id/TituloUniverso"
+        style="@style/titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:editable="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxLength="20"
+        android:minEms="5"
+        android:text="@string/TituloUniverso"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/br"
+        android:layout_width="108dp"
+        android:layout_height="4dp"
+        android:background="@drawable/vector_black_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloUniverso" />
+
+    <ImageView
+        android:id="@+id/portadaUniverso"
+        android:layout_width="104dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/br" />
+
+    <View
+        android:id="@+id/br2"
+        android:layout_width="108dp"
+        android:layout_height="4dp"
+        android:background="@drawable/vector_black_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DescripcionUniverso" />
+
+    <EditText
+        android:id="@+id/DescripcionUniverso"
+        android:layout_width="111dp"
+        android:layout_height="34dp"
+        android:background="#BABABA"
+        android:backgroundTint="#BABABA"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLength="250"
+        android:minHeight="48dp"
+        android:text="Esto es una descripcion"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/br3" />
+
+    <View
+        android:id="@+id/br3"
+        android:layout_width="108dp"
+        android:layout_height="4dp"
+        android:background="@drawable/vector_black_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/portadaUniverso" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="69dp"
+        android:layout_height="32dp"
+        android:backgroundTint="#117196"
+        android:enabled="true"
+        android:text="@string/universoButtonText"
+        android:textColor="#120909"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/br2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

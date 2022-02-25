@@ -1,0 +1,42 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <PreferenceCategory app:title="@string/notification_header">
+
+        <ListPreference
+            android:defaultValue="tone"
+            android:entries="@array/rigtone"
+            android:entryValues="@array/rigtone_values"
+            android:key="@string/ringtone"
+            android:summary="Sonido de la notificacion"
+            android:title="@string/tono" />
+        <ListPreference
+            android:defaultValue="colorNotificacion"
+            android:entries="@array/colores"
+            android:entryValues="@array/colores_values"
+            android:key="@string/coloresNotification"
+            android:summary="color de la notificacion"
+            android:title="@string/tono" />
+        <ListPreference
+            android:defaultValue="IconoNotificacion"
+            android:entries="@array/iconos"
+            android:entryValues="@array/iconos_values"
+            android:key="@string/iconos"
+            android:summary="icono de la notificacion"
+            android:title="@string/tono" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="general">
+    <SwitchPreferenceCompat
+        app:key="@string/eliminarTodasCategorias"
+        app:summaryOff="@string/no"
+        app:summaryOn="@string/ok"
+        app:title="@string/eliminarCategorias" />
+    <SwitchPreferenceCompat
+        app:key="@string/olvidarDatosInicio"
+        app:summaryOff="@string/no"
+        app:summaryOn="@string/ok"
+        app:title="@string/olvidame" />
+    </PreferenceCategory>
+</PreferenceScreen>

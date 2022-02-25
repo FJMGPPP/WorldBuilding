@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "126128632400",
+    "project_id": "worldbulding",
+    "storage_bucket": "worldbulding.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126128632400:android:923fa9236a305063b8d755",
+        "android_client_info": {
+          "package_name": "com.fjmg.worldbuilding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126128632400-9g97utjvtp9p367g2pjrjvco2ij253em.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK8_8Kt12mHODIXtBnAwp-RMGCnbDwd9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126128632400-9g97utjvtp9p367g2pjrjvco2ij253em.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

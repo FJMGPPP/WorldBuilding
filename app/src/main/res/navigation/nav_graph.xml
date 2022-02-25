@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/universosFragment">
+
+    <fragment
+        android:id="@+id/universosFragment"
+        android:name="com.fjmg.worldbuilding.ui.universo.UniversosFragment"
+        android:label="fragment_universos"
+        tools:layout="@layout/fragment_universos" >
+        <action
+            android:id="@+id/action_SelectUniverso"
+            app:destination="@id/universosBigSelectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/universosBigSelectFragment"
+        android:name="com.fjmg.worldbuilding.ui.universo.bigUniverso.UniversoBigSelectFragment"
+        android:label="UniversosBigSelectFragment" >
+        <argument
+            android:name="Titulo"
+            app:argType="string"
+            android:defaultValue="Titulo" />
+        <argument
+            android:name="Descripcion"
+            app:argType="string"
+            android:defaultValue="Esto es una descrpcion" />
+        <action
+            android:id="@+id/action_universosBigSelectFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.fjmg.worldbuilding.ui.main.MainFragment"
+        android:label="mainFragment" >
+        <action
+            android:id="@+id/action_to_Categoria"
+            app:destination="@id/categoriaFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentDiagram"
+            app:destination="@id/fragmentDiagram" />
+        <action
+            android:id="@+id/action_mainFragment_to_preferenceFragment"
+            app:destination="@id/preferenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriaFragment"
+        android:name="com.fjmg.worldbuilding.ui.categoria.CategoriaFragment"
+        android:label="CategoriaFragment" >
+        <action
+            android:id="@+id/action_categoriaFragment_self"
+            app:destination="@id/categoriaFragment"
+            app:popUpTo="@id/categoriaFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_categoriaFragment_to_entidadesFragment"
+            app:destination="@id/entidadesFragment" />
+        <action
+            android:id="@+id/action_categoriaFragment_to_baseDialogFragment"
+            app:destination="@id/baseDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entidadesFragment"
+        android:name="com.fjmg.worldbuilding.ui.categoria.Entidades.EntidadesFragment"
+        android:label="EntidadesFragment" />
+    <fragment
+        android:id="@+id/fragmentDiagram"
+        android:name="com.fjmg.worldbuilding.ui.Diagramas.FragmentDiagram"
+        android:label="FragmentDiagram" />
+    <dialog
+        android:id="@+id/baseDialogFragment"
+        android:name="com.fjmg.worldbuilding.data.base.BaseDialogFragment"
+        android:label="BaseDialogFragment" />
+    <fragment
+        android:id="@+id/preferenceFragment"
+        android:name="com.fjmg.worldbuilding.ui.preferences.PreferenceFragment"
+        android:label="PreferenceFragment" />
+</navigation>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector_background_fragment_main">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/AddCategoriaButton"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:id="@+id/Categorias"
+        android:layout_width="381dp"
+        android:layout_height="170dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="24dp"
+        android:background="#C4C4C4"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/lblMainCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/CategoriaMainLabel" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@drawable/vector_black_line_main" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RvCriaturasMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Diagramas"
+        android:layout_width="381dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="32dp"
+        android:background="#C4C4C4"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Categorias">
+
+        <TextView
+            android:id="@+id/lblMainDiagramas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/DiagramasMainLabel" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/vector_black_line_main" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RvDiagramasMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/StoryLines"
+        android:layout_width="381dp"
+        android:layout_height="170dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        android:background="#C4C4C4"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Diagramas">
+
+        <TextView
+            android:id="@+id/lblMainStoryLines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/StoryLinesMainLabel" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/vector_black_line_main" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RvStoryLinesMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
